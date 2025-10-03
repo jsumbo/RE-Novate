@@ -7,7 +7,7 @@ import time
 import pandas as pd
 import sklearn
 
-# Resolve model path relative to this file so the app works regardless of CWD
+# Resolve model path
 BASE_DIR = Path(__file__).resolve().parent.parent
 MODEL_V2 = BASE_DIR / 'model' / 'entrepreneurial_skill_model_v2.joblib'
 MODEL_V1 = BASE_DIR / 'model' / 'entrepreneurial_skill_model.joblib'
@@ -41,7 +41,7 @@ else:
     st.sidebar.write(f"Loaded model: {MODEL_PATH.name}")
     st.sidebar.write(f"sklearn (env): {sklearn.__version__}")
 
-st.set_page_config(page_title="Entrepreneurial Skill Simulator", layout='centered')
+st.set_page_config(page_title="RE-Novate", layout='centered')
 st.title("Entrepreneurial Skill Simulator")
 st.write("Fill in the details below to see your entrepreneurial skill prediction!")
 
