@@ -61,14 +61,14 @@ with st.sidebar:
 # User input form with demo prefill support
 def user_inputs(prefill=None):
     if prefill is None:
-        age = st.slider('Age', 15, 19, 17)
+        age = st.number_input('Age', min_value=15, max_value=19, value=17, step=1)
         prior_business_exposure = st.selectbox('Prior Business Exposure', [0,1])
         risk_taking = st.slider('Risk-taking Score', 0.0, 1.0, 0.5)
         decision_speed = st.slider('Decision Speed', 0.0, 1.0, 0.5)
         creativity_score = st.slider('Creativity Score', 0.0, 1.0, 0.5)
         leadership_experience = st.selectbox('Leadership Experience', [0,1])
     else:
-        age = st.slider('Age', 15, 19, prefill.get('age', 17))
+        age = st.number_input('Age', min_value=15, max_value=19, value=prefill.get('age', 17), step=1)
         prior_business_exposure = st.selectbox('Prior Business Exposure', [0,1], index=1 if prefill.get('prior_business_exposure', 0)==1 else 0)
         risk_taking = st.slider('Risk-taking Score', 0.0, 1.0, prefill.get('risk_taking', 0.5))
         decision_speed = st.slider('Decision Speed', 0.0, 1.0, prefill.get('decision_speed', 0.5))

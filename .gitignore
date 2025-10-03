@@ -39,9 +39,9 @@ coverage.xml
 .DS_Store
 
 # Model artifacts
-model/*.joblib
-model/*.pkl
-model/*.pickle
+# model/*.joblib
+# model/*.pkl
+# model/*.pickle
 
 # Docs build
 docs/_build/
