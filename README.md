@@ -6,20 +6,6 @@
 
 A Random Forest‑based demo that predicts a student's entrepreneurial-skill likelihood from simple inputs and exposes a tidy Streamlit interface for quick demos and grading.
 
-<!-- TOC -->
-## Table of contents
-
-- [Project structure](#project-structure)
-- [Getting Started](#getting-started-quick-reproducible-setup)
-- [Demo checklist](#demo-checklist-5-minute-walkthrough)
-- [Design](#design)
-- [Results & limitations](#results--limitations)
-- [Deployment](#deployment)
-- [Tests](#tests)
-- [License](#license)
-
-<!-- /TOC -->
-
 ---
 
 ## 🚀 Project Structure
